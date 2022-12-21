@@ -1,0 +1,131 @@
+<!--
+    Copyright 2022 rmnscnce@ya.ru
+ 
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+ 
+        http://www.apache.org/licenses/LICENSE-2.0
+ 
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 110%;
+            -moz-hyphens: auto;
+            hyphens: auto;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 40em;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 30px;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .author {
+            font-size: 15px;
+        }
+
+        .description {
+            font-size: 17px;
+        }
+
+        .footnote {
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .notices {
+            font-size: 12px;
+        }
+
+        footer {
+            margin-top: 10%;
+        }
+
+        #triangle {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 12px 24px 12px;
+            border-color: transparent transparent red transparent;
+        }
+
+        #triangle {
+            animation-name: rainbow;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes rainbow {
+            0% {
+                border-color: transparent transparent red transparent;
+            }
+
+            12.5% {
+                border-color: transparent transparent yellow transparent;
+            }
+
+            37.5% {
+                border-color: transparent transparent orange transparent;
+            }
+
+            50% {
+                border-color: transparent transparent green transparent;
+            }
+
+            62.5% {
+                border-color: transparent transparent blue transparent;
+            }
+
+            75% {
+                border-color: transparent transparent purple transparent;
+            }
+
+            87.5% {
+                border-color: transparent transparent indigo transparent;
+            }
+
+            100% {
+                border-color: transparent transparent red transparent;
+            }
+        }
+    </style>
+    <title>shrtr</title>
+</head>
+
+<body>
+    <div class="flyer">
+        <div class="title" title="/&#712;&#643;&#596;&#720;t&#601;/">shrtr</div>
+        <div class="author">(authored by <a href="mailto:rmnscnce@ya.ru">rmnscnce@ya.ru)</a></div>
+        <br>
+        <div class="description">A simple link shortening web software for use on <a
+                href="https://workers.cloudflare.com/">Cloudflare Workers&reg;</a></div>
+        <br>
+        <div class="footnote" style="font-weight: bold;">Version 0.1.0 &bull; <a
+                href="https://github.com/rmnscnce/shrtr">Source code on Github</a>
+        </div>
+        <br>
+        <div class="notices">Cloudflare, the Cloudflare logo, and Cloudflare Workers are trademarks and/or registered
+            trademarks of Cloudflare, Inc. in the United States and other jurisdictions.</div>
+    </div>
+
+    <footer>
+        <div id="triangle" style="margin: 0 auto;" title="Have a good one"></div>
+    </footer>
+</body>
+
+</html>

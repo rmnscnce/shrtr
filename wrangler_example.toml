@@ -1,0 +1,13 @@
+name = "shrtr"
+main = "build/worker/shim.mjs"
+compatibility_date = "2022-01-20"
+
+kv_namespaces = [
+    { binding = "SHRTR_MAP", id = "CHANGE THIS", preview_id = "CHANGE THIS" },
+]
+
+[vars]
+WORKERS_RS_VERSION = "^0.0"
+
+[build]
+command = "cargo install -q worker-build --version ^0.0 && worker-build --release"
