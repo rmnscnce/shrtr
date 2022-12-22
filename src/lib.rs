@@ -40,7 +40,7 @@ const DEFAULT_PAGE: &'static str = include_str!("assets/html/default.html");
 /// ### "Error 404" page of the website
 ///
 /// Modify `src/assets/html/e404.html` to change how the page behaves
-const E404_PAGE: &'static str = include_str!("assets/html/e404.html");
+const E404_PAGE: &'static str = include_str!("assets/html/errors/404.html");
 
 #[event(fetch)]
 pub async fn main(req: Request, env: Env, _ctx: worker::Context) -> Result<Response> {
